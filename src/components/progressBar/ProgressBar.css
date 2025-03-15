@@ -35,12 +35,26 @@ html {
 
 @media (max-width: 768px) {
   #progressBarContainer {
-    top: 60px; /* Adjust this value to align with the mobile navbar */
+    top: 70px; /* Adjusted from 60px to move it lower, below the logo */
     position: fixed;
     z-index: 1000;
+    height: 5px; /* Slightly smaller for mobile */
   }
   
   #progressBar {
     transition: transform 0.05s ease-out;
+    height: 5px; /* Match height with container */
+  }
+}
+
+/* Special adjustment for very small screens */
+@media (max-width: 480px) {
+  #progressBarContainer {
+    top: 65px; /* Even lower for very small screens */
+    height: 4px; /* Even smaller for very small screens */
+  }
+  
+  #progressBar {
+    height: 4px; /* Match height with container */
   }
 }

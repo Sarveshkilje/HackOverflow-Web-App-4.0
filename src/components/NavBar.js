@@ -21,6 +21,15 @@ const mobileStyles = {
     fontSize: '0.8rem',
     padding: '0.3rem 0.8rem',
     marginLeft: '10px'
+  },
+  coPoweredText: {
+    fontSize: '0.7rem',
+    color: '#fff',
+    marginBottom: '2px',
+    textAlign: 'center',
+    fontFamily: 'Poppins, sans-serif',
+    opacity: 0.9,
+    letterSpacing: '0.5px'
   }
 };
 
@@ -78,15 +87,32 @@ export const NavBar = () => {
                 style={isMobile ? mobileStyles.mobileLogo : {}}
               />
             </a>
-            {/* Add Blue Star sponsor logo */}
-            <a href="https://bluestar.com" target="_blank" rel="noreferrer" alt="Blue Star">
-              <img 
-                src={blueStarLogo} 
-                alt="Blue Star Logo" 
-                id="blue-star-logo" 
-                style={isMobile ? mobileStyles.mobileBlueStarLogo : { height: '60px', marginLeft: '25px' }}
-              />
-            </a>
+            {/* Add Blue Star sponsor logo with Co-Powered By text above */}
+            <div style={{ 
+              display: 'flex', 
+              flexDirection: 'column', 
+              alignItems: 'center',
+              marginLeft: isMobile ? '10px' : '25px' 
+            }}>
+              <div style={isMobile ? mobileStyles.coPoweredText : { 
+                fontSize: '0.8rem', 
+                color: '#fff', 
+                marginBottom: '4px',
+                fontFamily: 'Poppins, sans-serif',
+                opacity: 0.9,
+                letterSpacing: '0.5px'
+              }}>
+                Co-Powered By
+              </div>
+              <a href="https://www.bluestarindia.com/" target="_blank" rel="noreferrer" alt="Blue Star">
+                <img 
+                  src={blueStarLogo} 
+                  alt="Blue Star Logo" 
+                  id="blue-star-logo" 
+                  style={isMobile ? mobileStyles.mobileBlueStarLogo : { height: '60px' }}
+                />
+              </a>
+            </div>
           </Navbar.Brand>
 
           {/* New button "Brochure mobile button" only shown in mobile view */}
