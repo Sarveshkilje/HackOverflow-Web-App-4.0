@@ -8,7 +8,8 @@ import quillbotWhite from "../assets/img/quillbotWhite.png";
 import pranika from "../assets/img/pranika.png";
 import imfsWhite from "../assets/img/imfsWhite.webp";
 import amStudy from "../assets/img/AMstudy.png";
-import bsides from "../assets/img/BSides Mumbai Black.png";
+import bsides from "../assets/img/BSides Mumbai White.png";
+import unloxBlack from "../assets/img/unlox black.png"; 
 
 // Past Sponsors Assets
 import noticebardWhite from "../assets/img/noticebardWhite.png";
@@ -107,6 +108,15 @@ const Sponsors = () => {
           link: "https://www.bsidesmumbai.in/",
           effect: "fade-down",
           SubSponsorcategory: "Community",
+        },
+        // Education Partner 
+        {
+          id: 8, 
+          name: "Unlox",
+          image: unloxBlack,
+          link: "https://unlox.com/",
+          effect: "fade-up",
+          SubSponsorcategory: "Education",
         },
       ],
     },
@@ -359,6 +369,9 @@ const Sponsors = () => {
                       
                       {/* Bronze Sponsor Section */}
                       {renderSponsorSection("Bronze Sponsor", "Bronze", sponsor)}
+                      
+                      {/* Education Partner Section */}
+                      {renderSponsorSection("Education Partner", "Education", sponsor)}
                       
                       {/* Environment Partner Section */}
                       {renderSponsorSection("Environment Partner", "Environment", sponsor)}

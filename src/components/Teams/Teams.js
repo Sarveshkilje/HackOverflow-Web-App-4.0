@@ -251,6 +251,23 @@ function Teampage() {
       key: "2",
     },
     {
+      image: "https://hackoverflow3.blr1.cdn.digitaloceanspaces.com/teams/yash%20mahajan.png",
+      image1: "https://hackoverflow3.blr1.cdn.digitaloceanspaces.com/teams/yash%20mahajan.png",
+      id: "Yash",
+      github: "https://hackoverflow3.tech/",
+      githubhandle: "@coming_soon",
+      instagram: "https://hackoverflow3.tech/",
+      instagramhandle: "@coming_soon",
+      youtube: "https://hackoverflow3.tech/",
+      youtubehandle: "@coming_soon",
+      linkedin: "https://www.linkedin.com/in/yash-mahajan-90b0b5219/",
+      linkedinhandle: "@yash-mahajan",
+      name: "Cloud Mentor",
+      content:
+        "Hey everyone! 👋 I’m Yash Mahajan, Sr. Executive at Godrej Infotech Ltd. Passionate about tech & innovation, I love sharing insights and guiding aspiring minds. Super excited to mentor at Hackoverflow 3.0—let’s learn, build, and innovate together! 🚀🔥",
+      key: "3",
+    },
+    {
       image: "https://hackoverflow3.blr1.cdn.digitaloceanspaces.com/teams/prathamesh%20pandey.png",
       image1: "https://hackoverflow3.blr1.cdn.digitaloceanspaces.com/teams/prathamesh%20pandey.png",
       id: "Prathamesh",
@@ -266,23 +283,6 @@ function Teampage() {
       content:
         "Hey everyone! 👋 I'm Prathmesh Pandey, SIH'22 Winner & Founder of Hackoverflow.tech 🚀. Excited to mentor at Hackoverflow 3.0! 🎉 Let’s innovate and connect! 💡",
       key: "3",
-    },
-    {
-      image: "https://hackoverflow3.blr1.cdn.digitaloceanspaces.com/teams/yash%20mahajan.png",
-      image1: "https://hackoverflow3.blr1.cdn.digitaloceanspaces.com/teams/yash%20mahajan.png",
-      id: "Yash",
-      github: "https://hackoverflow3.tech/",
-      githubhandle: "@coming_soon",
-      instagram: "https://hackoverflow3.tech/",
-      instagramhandle: "@coming_soon",
-      youtube: "https://hackoverflow3.tech/",
-      youtubehandle: "@coming_soon",
-      linkedin: "https://www.linkedin.com/in/yash-mahajan-90b0b5219/",
-      linkedinhandle: "@yash-mahajan",
-      name: "Cloud Mentor",
-      content:
-        "Hey everyone! 👋 I’m Yash Mahajan, Sr. Executive at Godrej Infotech Ltd. Passionate about tech & innovation, I love sharing insights and guiding aspiring minds. Super excited to mentor at Hackoverflow 3.0—let’s learn, build, and innovate together! 🚀🔥",
-      key: "4",
     },
     // {
     //   image: "https://hackoverflow3.blr1.cdn.digitaloceanspaces.com/teams/reveal/reveal1.png",
