@@ -8,11 +8,10 @@ import { useEffect, useState, memo, useCallback } from "react";
 // import { Stack } from "@mui/material";
 import DateCards from '../Dates/DateCards';
 
-// CDN URLs for images
-const offlineDesktopView = "https://hackoverflow3.blr1.cdn.digitaloceanspaces.com/assets/Schedule/timeline_website.png";
-const offlineMobileView = "https://hackoverflow3.blr1.cdn.digitaloceanspaces.com/assets/Schedule/offline_mobile-resize.png";
-const onlineDesktopView = "hhttps://hackoverflow3.blr1.cdn.digitaloceanspaces.com/assets/Schedule/timeline_website.png";
-const onlineMobileView = "https://hackoverflow3.blr1.cdn.digitaloceanspaces.com/assets/Schedule/offline_mobile-resize.png";
+import offlineDesktopView from "../../assets/img/timeline_website.png";
+import offlineMobileView from "../../assets/img/offline_mobile-resize.png";
+import onlineDesktopView from "../../assets/img/timeline_website.png";
+import onlineMobileView from "../../assets/img/offline_mobile-resize.png";
 
 // Memoized image component for better performance
 const ScheduleImage = memo(({ src, alt }) => (
