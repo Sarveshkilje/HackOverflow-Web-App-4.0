@@ -53,14 +53,34 @@ import image30 from "../../assets/img/Events/1.0/HackOverflow 2.0/IMG_8507.JPG";
 // import image40 from "../../assets/img/Events/1.0/day3/_MG_8030.jpg";
 // import image41 from "../../assets/img/Events/1.0/day3/_MG_8108.jpg";
 
-//winner
+//winner - HackOverflow 2.0
 import image42 from "../../assets/img/pastwinners/First.webp";
 import image43 from "../../assets/img/pastwinners/Second.webp";
 import image44 from "../../assets/img/pastwinners/Third.webp";
 
+//winner - HackOverflow 3.0
+import ho3_winner1 from "../../assets/img/pastwinners/Winner 1 - Prize.JPG";
+import ho3_winner2 from "../../assets/img/pastwinners/Winner 2 -  Prize.JPG";
+import ho3_winner3 from "../../assets/img/pastwinners/Winner 3 - Prize.JPG";
+
 // Aftermovies
 import ho1Aftermovie from "../../assets/img/ho1.png";
 import ho2Aftermovie from "../../assets/img/ho2.png";
+
+//HackOverflow 3.0
+import ho3Aftermovie from "../../assets/img/Events/1.0/HackOverflow 3.0/3.0.png";
+import ho3_image1 from "../../assets/img/Events/1.0/HackOverflow 3.0/DSC06725.JPG";
+import ho3_image2 from "../../assets/img/Events/1.0/HackOverflow 3.0/DSC06951.JPG";
+import ho3_image3 from "../../assets/img/Events/1.0/HackOverflow 3.0/DSC07030.JPG";
+import ho3_image4 from "../../assets/img/Events/1.0/HackOverflow 3.0/DSC07142.JPG";
+import ho3_image5 from "../../assets/img/Events/1.0/HackOverflow 3.0/DSC07263.JPG";
+import ho3_image6 from "../../assets/img/Events/1.0/HackOverflow 3.0/DSC08607.JPG";
+import ho3_image7 from "../../assets/img/Events/1.0/HackOverflow 3.0/DSC08629.JPG";
+import ho3_image8 from "../../assets/img/Events/1.0/HackOverflow 3.0/DSC08645.JPG";
+import ho3_image9 from "../../assets/img/Events/1.0/HackOverflow 3.0/DSC08931.JPG";
+import ho3_image10 from "../../assets/img/Events/1.0/HackOverflow 3.0/DSC08937.JPG";
+import ho3_image11 from "../../assets/img/Events/1.0/HackOverflow 3.0/DSC_0145.JPG";
+
 
 export const filterableData = [
   // {
@@ -207,6 +227,58 @@ export const filterableData = [
   //   src: image_4,
   // },
 
+  // HackOverflow 3.0
+  {
+    category: 'hackoverflow3',
+    image: ho3Aftermovie,
+    link: 'https://youtu.be/YOUR_HO3_AFTERMOVIE_LINK' // Replace with actual HackOverflow 3.0 aftermovie link
+  },
+  {
+    category: 'hackoverflow3',
+    image: ho3_image1,
+  },
+  {
+    category: 'hackoverflow3',
+    image: ho3_image2,
+  },
+  {
+    category: 'hackoverflow3',
+    image: ho3_image3,
+  },
+  {
+    category: 'hackoverflow3',
+    image: ho3_image4,
+  },
+  {
+    category: 'hackoverflow3',
+    image: ho3_image5,
+  },
+  {
+    category: 'hackoverflow3',
+    image: ho3_image6,
+  },
+  {
+    category: 'hackoverflow3',
+    image: ho3_image7,
+  },
+  {
+    category: 'hackoverflow3',
+    image: ho3_image8,
+  },
+  {
+    category: 'hackoverflow3',
+    image: ho3_image9,
+  },
+  {
+    category: 'hackoverflow3',
+    image: ho3_image10,
+  },
+  {
+    category: 'hackoverflow3',
+    image: ho3_image11,
+  },
+
+
   // DAY 3
   // {
   //   name: "day 3",
@@ -256,6 +328,12 @@ export const filterableData = [
   //   name: "day 3",
   //   src: image35,
   // },
+  // Winners Section with Headers
+  {
+    category: 'winners',
+    isHeader: true,
+    headerText: 'HackOverflow 2.0'
+  },
   {
     category: 'winners',
     // image: 'https://hackoverflow3.blr1.cdn.digitaloceanspaces.com/Gallery/Winners/First.webp',
@@ -270,5 +348,22 @@ export const filterableData = [
     category: 'winners',
     // image: 'https://hackoverflow3.blr1.cdn.digitaloceanspaces.com/Gallery/Winners/Third.webp',
     image: image44
+  },
+  {
+    category: 'winners',
+    isHeader: true,
+    headerText: 'HackOverflow 3.0'
+  },
+  {
+    category: 'winners',
+    image: ho3_winner1
+  },
+  {
+    category: 'winners',
+    image: ho3_winner2
+  },
+  {
+    category: 'winners',
+    image: ho3_winner3
   },
 ];
