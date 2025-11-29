@@ -93,8 +93,8 @@ body {
             padding: 1rem;
             font-size: 3.5em;
             background: linear-gradient(98.84deg, #80ffea 43.27%, #8aff81 71.84%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             font-weight: 900;
             transition: 0.5s ;
             text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);

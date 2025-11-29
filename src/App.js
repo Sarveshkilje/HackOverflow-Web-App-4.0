@@ -9,6 +9,9 @@ import { Special } from "./components/Special/Special";
 import PreLoader from "./components/PreLoader/PreLoader";
 import ScrollToTop from "react-scroll-to-top";
 import CollegeClub from './components/CollegeClub/CollegeClub';
+import CountDownTimer from './components/CountDown/CountDownTimer';
+import DateCards from './components/Dates/DateCards';
+import DateReveal from './components/DateReveal/DateReveal';
 import { GlobeNewComponent } from './components/GlobeNewComponent/GlobeNewComponent';
 import FutureCityTheme from './components/FutureCityTheme/FutureCityTheme';
 import { Schedule } from './components/Schedule/Schedule';
@@ -146,9 +149,14 @@ function App() {
                 <NavBar />
                 <Banner />
                 
-                <OptimizedComponent id="special">
-                  <Special />
+                <OptimizedComponent id="date-reveal">
+                  <DateReveal />
                 </OptimizedComponent>
+
+{/* When the dates are declared then uncomment the following and comment the above DateReveal component*/}
+                {/* <OptimizedComponent id="special">
+                  <Special />
+                </OptimizedComponent> */}
 
                 <OptimizedComponent id="hackathon">
                   <HackathonOverview />
@@ -157,6 +165,12 @@ function App() {
                 <OptimizedComponent id="college">
                   <CollegeClub />
                 </OptimizedComponent>
+
+
+{/* To use the CountDown uncomment the following */}
+                {/* <OptimizedComponent id="countdown">
+                  <CountDownTimer />
+                </OptimizedComponent> */}
 
                 <OptimizedComponent id="globe">
                   <GlobeNewComponent />

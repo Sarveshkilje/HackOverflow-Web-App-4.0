@@ -8,6 +8,13 @@ import { useEffect, useState, memo, useCallback } from "react";
 // import { Stack } from "@mui/material";
 import DateCards from '../Dates/DateCards';
 
+//CDN url for Schedule
+// const offlineDesktopView = "https://hackoverflow3.blr1.cdn.digitaloceanspaces.com/assets/Schedule/timeline_website.png";
+// const offlineMobileView = "https://hackoverflow3.blr1.cdn.digitaloceanspaces.com/assets/Schedule/offline_mobile-resize.png";
+// const onlineDesktopView = "hhttps://hackoverflow3.blr1.cdn.digitaloceanspaces.com/assets/Schedule/timeline_website.png";
+// const onlineMobileView = "https://hackoverflow3.blr1.cdn.digitaloceanspaces.com/assets/Schedule/offline_mobile-resize.png";
+
+//Local url for Schedule
 import offlineDesktopView from "../../assets/img/timeline_website.png";
 import offlineMobileView from "../../assets/img/offline_mobile-resize.png";
 import onlineDesktopView from "../../assets/img/timeline_website.png";
@@ -149,19 +156,19 @@ export const Schedule = () => {
       </div>
       <div className="container">
         <div className="row" style={{ marginTop: "40px" }}>
-          <h1
-           id="green-yellow"
-            className="text-center text-[45px] sm:text-[25px] md:text-[35px] lg:text-[45px] capitalize cursor-pointer"
-            style={{
-              fontFamily: "Poppins,sans-serif",
-              fontWeight: 700,
-              textAlign: "center",
-              
-            }}
-          >
-            Key Dates
-          </h1>
-          <DateCards />
+            <h1
+             id="green-yellow"
+              className="text-center text-[45px] sm:text-[25px] md:text-[35px] lg:text-[45px] capitalize cursor-pointer"
+              style={{
+                fontFamily: "Poppins,sans-serif",
+                fontWeight: 700,
+                textAlign: "center",
+                
+              }}
+            >
+              Key Dates
+            </h1>
+            <DateCards />
         </div>
         {/* <div className="row">
           <Stack>

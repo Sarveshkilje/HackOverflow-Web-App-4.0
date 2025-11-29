@@ -39,6 +39,7 @@
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease;
@@ -46,7 +47,7 @@
 
 .face1 {
   background: rgba(66, 106, 100, 1);
-  padding: 2rem;
+  padding: 1.5rem;
   z-index: 1;
   transform: translateY(0);
 }
@@ -54,14 +55,15 @@
 .content {
   text-align: center;
   color: #fff;
-  padding: 1rem;
+  padding: 0.5rem;
+  width: 100%;
 }
 
 .card-title {
   font-family: 'Roboto', sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   color: #7DFFE4;
   text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.517);
 }
@@ -69,13 +71,13 @@
 .card-description {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem !important;
-  line-height: 1;
+  line-height: 1.4;
   color: #fff !important;
   margin-top: 0.5rem;
   font-weight: 400;
   text-shadow: rgb(35, 92, 49) !important;
-  padding: 0 1rem;
-  text-align: left;
+  padding: 0;
+  text-align: center;
 }
 
 .face2 {
@@ -92,14 +94,15 @@
 
 .date-text {
   font-family: 'Roboto', sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 900;
   color: #7DFFE4;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 .date-card:hover .face2 {
-  transform: translateY(85%);
+  transform: translateY(80%);
 }
 
 .date-card:hover .face1 {
@@ -298,10 +301,3 @@
     transition: transform 0.3s ease;
   }
 }
-
-/* Ensure desktop hover still works */
-@media (min-width: 769px) {
-  .date-card:hover .face2 {
-    transform: translateY(85%);
-  }
-} 

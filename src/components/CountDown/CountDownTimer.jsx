@@ -1,63 +1,44 @@
+import React from "react";
 import { useCountdown } from "../../Hooks/useCountdown";
-import { useEffect, useRef, useState } from "react";
-
-import CountDownCard from "./CountDownCard";
+import "./CountDown.css";
 
 const CountDownTimer = () => {
-  //card ref
-  const date = new Date("2023-03-17");
-  const [days, hours, minutes, seconds] = useCountdown(date);
-  const SecondsCardRef = useRef(null);
-  const MinutesCardRef = useRef(null);
-  const HoursCardRef = useRef(null);
-  const DaysCardRef = useRef(null);
-  //state
-  const [dayss, setDays] = useState(days);
-  const [hourss, setHours] = useState(hours);
-  const [minutess, setMinutes] = useState(minutes);
-  const [secondss, setSeconds] = useState(seconds);
+  const targetDate = new Date("2026-03-11");
+  const [days, hours, minutes, seconds] = useCountdown(targetDate);
 
-  useEffect(() => {
-    // seconds === 0 && setSeconds(59);
-    // minutes === 0 && setMinutes(59);
-    if (seconds > 0) {
-      setTimeout(() => {
-        setSeconds(seconds);
-        SecondsCardRef.current.classList.toggle("rotate");
-      }, 1000);
-    }
-    if (seconds === 0 && minutes > 0) {
-      setMinutes(minutes);
-      MinutesCardRef.current.classList.toggle("rotate");
-    }
-  }, [seconds, minutes]);
-  useEffect(() => {
-    hours === 0 && setHours(23);
-    if (minutes === 0 && hours > 0) {
-      setHours(hours - 1);
-      HoursCardRef.current.classList.toggle("rotate");
-    }
-  }, [minutes, hours]);
-  useEffect(() => {
-    days === 14 && setDays(13);
-    hours === 0 &&
-      setDays(days - 1) &&
-      DaysCardRef.current.classList.toggle("rotate");
-  }, [hours, days]);
   return (
-    <div className="countdown__container">
-      <CountDownCard label="days" number={days} cardRef={DaysCardRef} />
-      <CountDownCard label="hours" number={hours} cardRef={HoursCardRef} />
-      <CountDownCard
-        label="minutes"
-        number={minutes}
-        cardRef={MinutesCardRef}
-      />
-      <CountDownCard
-        label="seconds"
-        number={seconds}
-        cardRef={SecondsCardRef}
-      />
+    <div className="countdown-wrapper">
+      <div className="countdown-overlay"></div>
+      <h2 className="countdown-heading">Event Countdown</h2>
+      <div className="countdown-main">
+        <div className="countdown-timer">
+          <div className="countdown-card">
+            <h3 className="countdown-number">{days}</h3>
+            <p className="countdown-label">days</p>
+          </div>
+        </div>
+        <h3 className="countdown-separator">:</h3>
+        <div className="countdown-timer">
+          <div className="countdown-card">
+            <h3 className="countdown-number">{hours}</h3>
+            <p className="countdown-label">Hours</p>
+          </div>
+        </div>
+        <h3 className="countdown-separator">:</h3>
+        <div className="countdown-timer">
+          <div className="countdown-card">
+            <h3 className="countdown-number">{minutes}</h3>
+            <p className="countdown-label">Minutes</p>
+          </div>
+        </div>
+        <h3 className="countdown-separator">:</h3>
+        <div className="countdown-timer">
+          <div className="countdown-card">
+            <h3 className="countdown-number">{seconds}</h3>
+            <p className="countdown-label">Seconds</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

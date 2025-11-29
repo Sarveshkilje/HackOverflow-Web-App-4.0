@@ -1,0 +1,165 @@
+/* Countdown Timer Wrapper */
+.countdown-wrapper {
+  padding: 60px 20px;
+  background: transparent; /* Changed to transparent to match website background */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Removed overlay as it might interfere with the background matching */
+.countdown-overlay {
+  display: none;
+}
+
+.countdown-heading {
+  text-align: center;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  /* Matching the Glimpses header color (green-yellow gradient) */
+  background: linear-gradient(98.84deg, #80ffea 43.27%, #8aff81 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.countdown-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem; /* Increased gap */
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+}
+
+.countdown-timer {
+  display: inline-block;
+}
+
+.countdown-card {
+  border-radius: 0.75rem;
+  background: linear-gradient(to bottom, #5B8F81, #365048);
+  padding: 1.5rem; /* Increased padding */
+  min-width: 130px; /* Increased size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  aspect-ratio: 1 / 1;
+  box-shadow: 0 4px 10px rgba(91, 143, 129, 0.4);
+  border: 2px solid rgba(161, 213, 160, 0.2);
+  /* Removed hover transition */
+}
+
+/* Removed hover effects */
+/* .countdown-card:hover { ... } */
+
+.countdown-number {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem; /* Increased font size */
+  line-height: 3rem;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  /* Removed animation and hover effects */
+}
+
+.countdown-label {
+  font-size: 1.25rem; /* Increased font size */
+  line-height: 1.75rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #A1D5A0;
+  margin-top: 0.5rem;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+.countdown-separator {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem; /* Increased size */
+  color: #5B8F81;
+  margin: 0 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .countdown-wrapper {
+    padding: 50px 15px;
+  }
+
+  .countdown-heading {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .countdown-main {
+    gap: 0.5rem;
+  }
+
+  .countdown-card {
+    min-width: 90px; /* Adjusted for mobile but larger than before */
+    padding: 1rem;
+  }
+
+  .countdown-number {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+
+  .countdown-label {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .countdown-separator {
+    font-size: 1.75rem;
+    margin: 0 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown-wrapper {
+    padding: 40px 15px;
+  }
+
+  .countdown-heading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .countdown-main {
+    gap: 0.25rem;
+  }
+
+  .countdown-card {
+    min-width: 70px;
+    padding: 0.75rem 0.5rem;
+  }
+
+  .countdown-number {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .countdown-label {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .countdown-separator {
+    font-size: 1.25rem;
+    margin: 0 0.25rem;
+  }
+}

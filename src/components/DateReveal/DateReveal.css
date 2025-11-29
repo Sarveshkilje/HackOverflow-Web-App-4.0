@@ -1,0 +1,150 @@
+/* Reuse styles from Special.css and VideoCard.css */
+
+.date-reveal-section {
+  position: relative;
+  padding-top: 3rem;
+}
+
+.date-reveal-header {
+  text-align: center;
+  font-size: 45px;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* Gradient text for header */
+#green-yellow {
+  background: linear-gradient(98.84deg, #80ffea 43.27%, #8aff81 71.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.date-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.date-card {
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  box-shadow: rgb(34, 54, 41) 0px 4px 10px;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #1b2726; /* Dark background matching theme */
+  position: relative;
+  width: 406px;
+  height: 240px;
+}
+
+.date-card:hover {
+  transition: 0.3s ease-in-out;
+  box-shadow: rgb(91, 143, 129) 0px 4px 10px;
+}
+
+/* Meter Animation Styles */
+.meter-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Gradient Overlay for 3D effect */
+.meter-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, 
+    rgba(27, 39, 38, 1) 0%, 
+    rgba(27, 39, 38, 0) 20%, 
+    rgba(27, 39, 38, 0) 80%, 
+    rgba(27, 39, 38, 1) 100%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+.meter-track {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Default animation removed, controlled by classes below */
+}
+
+.meter-track.scroll-up {
+  animation: scrollUp 10s linear infinite;
+}
+
+.meter-track.scroll-down {
+  animation: scrollDown 10s linear infinite;
+}
+
+.meter-number {
+  font-family: "Poppins", sans-serif;
+  font-size: 100px; 
+  font-weight: 700;
+  color: #5B8F81; /* Primary theme color */
+  line-height: 120px; /* Adjust based on card height/visible area */
+  text-align: center;
+  opacity: 0.8;
+}
+
+/* Highlight the middle number slightly? */
+/* We can't easily target the "middle" in a moving CSS animation without JS or complex masking, 
+   but the gradient overlay helps focus the center. */
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 64rem) {
+  .date-card {
+    width: 40vw;
+    height: 24vw;
+  }
+  .meter-number {
+    font-size: 5vw;
+    line-height: 8vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .date-card {
+    height: 45vw;
+    width: 80vw;
+  }
+  .meter-number {
+    font-size: 15vw;
+    line-height: 20vw;
+  }
+}
