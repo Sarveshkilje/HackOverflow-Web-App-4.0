@@ -122,7 +122,7 @@ export const NavBar = () => {
           </Navbar.Brand>
 
           {/* New button "Brochure mobile button" only shown in mobile view */}
-          <button
+          {/* <button
             style={{
               backgroundColor: "transparent",
               border: "1px solid white",
@@ -134,7 +134,24 @@ export const NavBar = () => {
             onClick={() => window.open("https://hackoverflow3.blr1.cdn.digitaloceanspaces.com/Brochure/publicityBrochure.pdf", "_blank")}
           >
             Brochure
-          </button>
+          </button> */}
+          
+          <a
+            href="/docs/publicityBrochure.pdf"
+            download="HackOverflow_4.0_Brochure.pdf"
+            style={{
+              backgroundColor: "transparent",
+              border: "1px solid white",
+              color: "white",
+              fontWeight: "300",
+              textDecoration: "none",
+              display: "inline-block",
+              ...(isMobile ? mobileStyles.mobileBrochureBtn : {})
+            }}
+            className="hover:bg-[#5B8F81] text-white font-bold rounded d-md-none ml-auto"
+          >
+            Brochure
+          </a>
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
@@ -232,9 +249,11 @@ export const NavBar = () => {
             </Nav>
             <div className="navbar-text flex justify-end">
               <a
-                href="https://hackoverflow3.blr1.cdn.digitaloceanspaces.com/Brochure/publicityBrochure.pdf"
-                target="_blank"
-                rel="noreferrer"
+              // href="https://hackoverflow3.blr1.cdn.digitaloceanspaces.com/Brochure/publicityBrochure.pdf"
+              //   target="_blank"
+              //   rel="noreferrer"
+                href="/docs/publicityBrochure.pdf"
+                download="HackOverflow_4.0_Brochure.pdf"
               >
                 <button className="bg-[#9B96B3] hover:bg-[#5B8F81] text-white font-bold py-2 px-4 rounded">
                   Brochure

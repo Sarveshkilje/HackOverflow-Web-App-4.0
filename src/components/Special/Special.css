@@ -1,21 +1,132 @@
-.SpecialBackgroundImage {
-  top: 20%;
-  left: 0%;
-  position: absolute;
-  bottom: 0;
-  width: 35%;
-  height: 100%;
-  right: 0;
-  z-index: -4;
+:root {
+  --bg-dark: #0F0F0F;
+  --text-white: #FFFFFF;
+  --text-gray: #B0B0B0;
+  --brand-gradient: linear-gradient(90deg, #FCB216 0%, #E85D24 35%, #D91B57 70%, #63205F 100%);
 }
 
-.special-image {
+.timeline-section {
+  position: relative;
+  overflow: hidden; 
+  min-height: 60vh;
+  padding-bottom: 5rem;
+}
+
+/* --- Ambient Glow Orbs --- */
+.glow-orb {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(140px); /* Softened the blur for professional look */
+  opacity: 0.12;
+  z-index: 0;
+  pointer-events: none; 
+}
+
+.orb-1 { top: -100px; left: -100px; background: #E85D24; }
+.orb-2 { bottom: -100px; right: -100px; background: #63205F; }
+
+/* --- Typography --- */
+.gradient-text {
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* --- Professional Glass Card --- */
+.glass-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px; /* Slightly squarer for professional look */
+  padding: 2.5rem 2rem;
+  transition: all 0.4s ease-out;
+  overflow: hidden;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover State: Minimalist Lift */
+.glass-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--accent-color);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); 
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
   width: 100%;
-  height: auto;
-  max-width: 300px; /* Adjust as needed to match video card width */
-  max-height: 200px; /* Adjust as needed to match video card height */
-  object-fit: cover;
-  margin: auto; /* Center the image */
-  border-radius: 20px; /* Rounded corners */
-  box-shadow: 0 7px 12px rgba(91, 143, 129, 0.5); /* Background shadow with color #5B8F81 */
+}
+
+/* --- Massive Date Typography --- */
+.date-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.event-month {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 4px; /* Wide spacing looks very premium */
+  color: #888;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.event-day {
+  font-family: 'Poppins', sans-serif;
+  font-size: 5rem; /* Massive number */
+  font-weight: 800;
+  /* The color is set inline by React, but we add a glow here */
+  text-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* --- Text Content --- */
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  color: var(--text-white);
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #9ca3af; 
+  line-height: 1.6;
+  max-width: 90%;
+  margin: 0 auto; /* Center the text block */
+}
+
+/* --- Animated Bottom Border --- */
+.card-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0); 
+  transform-origin: center; /* Expands from center out */
+  transition: transform 0.4s ease;
+}
+
+.glass-card:hover .card-border {
+  transform: scaleX(1);
 }
