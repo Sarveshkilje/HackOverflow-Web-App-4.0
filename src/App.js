@@ -5,13 +5,13 @@ import React, { Fragment, useEffect, useState, useCallback } from "react";
 import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
 import HackathonOverview from "./components/HackathonOverview/HackathonOverview";
-// import { Special } from "./components/Special/Special";
+import Special from "./components/Special/Special.jsx";
 import PreLoader from "./components/PreLoader/PreLoader";
 import ScrollToTop from "react-scroll-to-top";
 import CollegeClub from './components/CollegeClub/CollegeClub';
 // import CountDownTimer from './components/CountDown/CountDownTimer';
 // import DateCards from './components/Dates/DateCards';
-import DateReveal from './components/DateReveal/DateReveal';
+// import DateReveal from './components/DateReveal/DateReveal';
 import { GlobeNewComponent } from './components/GlobeNewComponent/GlobeNewComponent';
 import FutureCityTheme from './components/FutureCityTheme/FutureCityTheme';
 import { Schedule } from './components/Schedule/Schedule';
@@ -133,6 +133,14 @@ function App() {
             path="/"
             element={
               <Fragment>
+                {/* Global Ambient Glow Orbs */}
+                <div className="glow-orb orb-1"></div>
+                <div className="glow-orb orb-2"></div>
+                <div className="glow-orb orb-3"></div>
+                <div className="glow-orb orb-4"></div>
+                <div className="glow-orb orb-5"></div>
+                <div className="glow-orb orb-6"></div>
+                
                 <ScrollToTop
                   className="scroll-to-top"
                   smooth
@@ -149,14 +157,14 @@ function App() {
                 <NavBar />
                 <Banner />
                 
-                <OptimizedComponent id="date-reveal" priority={true}>
+                {/* <OptimizedComponent id="date-reveal" priority={true}>
                   <DateReveal />
-                </OptimizedComponent>
+                </OptimizedComponent> */}
 
 {/* When the dates are declared then uncomment the following and comment the above DateReveal component*/}
-                {/* <OptimizedComponent id="special">
+                <OptimizedComponent id="special">
                   <Special />
-                </OptimizedComponent> */}
+                </OptimizedComponent>
 
                 <OptimizedComponent id="hackathon">
                   <HackathonOverview />

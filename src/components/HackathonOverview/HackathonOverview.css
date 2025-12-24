@@ -10,7 +10,7 @@
   padding: 100px 0;
   position: relative;
   overflow: hidden;
-  /* background-color: #0F0F0F; */ /* Enable if not using a global background */
+  background-color: #0F0F0F !important; /* Match global background */
 }
 
 /* --- Left Side Typography --- */
@@ -54,12 +54,14 @@
 .glass-pane {
   position: relative;
   background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px); /* Reduced from 20px for performance */
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 40px;
-  border-radius: 4px; /* Sharper corners for a "Tech" look */
+  border-radius: 4px;
   box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  will-change: transform; /* GPU acceleration */
+  transform: translate3d(0, 0, 0); /* Force GPU layer */
 }
 
 .about-text {

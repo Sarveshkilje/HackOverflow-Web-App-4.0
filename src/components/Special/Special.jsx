@@ -15,15 +15,13 @@ const Special = () => {
       day: "21",
       month: "MARCH",
       title: "Kickoff & Hacking",
-      desc: "Opening ceremony. Theme reveal. Coding starts.",
       color: "#FCB216" // Yellow
     },
     {
       id: 2,
       day: "22",
       month: "MARCH",
-      title: "Mentoring Sessions",
-      desc: "Mid-hack evaluations and expert guidance.",
+      title: "Mid-Evaluation",
       color: "#E85D24" // Orange
     },
     {
@@ -31,7 +29,6 @@ const Special = () => {
       day: "23",
       month: "MARCH",
       title: "Grand Finale",
-      desc: "Final pitches, judging, and prize distribution.",
       color: "#D91B57" // Pink
     }
   ];
@@ -44,13 +41,8 @@ const Special = () => {
       <Container>
         <div className="relative p-4 lg:py-10 w-full mb-8">
           <h1
-            className="text-center text-[45px] capitalize cursor-pointer section-title"
+            className="section-title"
             data-aos="fade-down"
-            style={{
-              fontFamily: "Poppins, sans-serif",
-              fontWeight: 700,
-              textAlign: "center",
-            }}
           >
             Mark Your <span className="gradient-text">Calendar</span>
           </h1>
@@ -76,7 +68,6 @@ const Special = () => {
 
                 <div className="text-content">
                   <h4 className="card-title">{event.title}</h4>
-                  <p className="card-desc">{event.desc}</p>
                 </div>
               </div>
 
