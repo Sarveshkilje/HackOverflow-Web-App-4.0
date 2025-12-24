@@ -7,7 +7,7 @@ import { FaGithub, FaInstagram, FaLinkedin, FaDiscord, FaYoutube } from 'react-i
 
 // Local url for logo
 // import logo from "../assets/img/3.0 logo 2025.png";
-import logo from "../assets/img/HO 4.0 assets/HO 4.0 Logo.png";
+import logo from "../assets/img/HO 4.0/HO 4.0 assets/HO 4.0 Logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

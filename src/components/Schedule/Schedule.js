@@ -15,10 +15,10 @@ import DateCards from '../Dates/DateCards';
 // const onlineMobileView = "https://hackoverflow3.blr1.cdn.digitaloceanspaces.com/assets/Schedule/offline_mobile-resize.png";
 
 //Local url for Schedule
-import offlineDesktopView from "../../assets/img/timeline_website.png";
-import offlineMobileView from "../../assets/img/offline_mobile-resize.png";
-import onlineDesktopView from "../../assets/img/timeline_website.png";
-import onlineMobileView from "../../assets/img/offline_mobile-resize.png";
+import offlineDesktopView from "../../assets/img/HO 4.0/HO schedule/Timeline-Web.png";
+import offlineMobileView from "../../assets/img/HO 4.0/HO schedule/Timeline-Mobile.png";
+import onlineDesktopView from "../../assets/img/HO 4.0/HO schedule/Timeline-Web.png";
+import onlineMobileView from "../../assets/img/HO 4.0/HO schedule/Timeline-Mobile.png";
 
 // Memoized image component for better performance
 const ScheduleImage = memo(({ src, alt }) => (
@@ -119,9 +119,7 @@ export const Schedule = () => {
     <section className="schedule" id="schedule">
       <div className="container-fluid">
         <h1
-         id="green-yellow"
-          // id="purple-pink"
-          className="text-center text-[45px] capitalize cursor-pointer"
+          className="text-center text-[45px] capitalize cursor-pointer schedule-heading-gradient"
           style={{
             fontFamily: "Poppins,sans-serif",
             fontWeight: 700,
@@ -157,13 +155,11 @@ export const Schedule = () => {
       <div className="container">
         <div className="row" style={{ marginTop: "40px" }}>
             <h1
-             id="green-yellow"
-              className="text-center text-[45px] sm:text-[25px] md:text-[35px] lg:text-[45px] capitalize cursor-pointer"
+              className="text-center text-[45px] sm:text-[25px] md:text-[35px] lg:text-[45px] capitalize cursor-pointer schedule-heading-gradient"
               style={{
                 fontFamily: "Poppins,sans-serif",
                 fontWeight: 700,
                 textAlign: "center",
-                
               }}
             >
               Key Dates

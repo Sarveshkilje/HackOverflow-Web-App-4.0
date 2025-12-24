@@ -9,7 +9,7 @@ import { Link, useLocation } from "react-router-dom";
 
 // Local url for logo and blue star logo
 // import logo from "../assets/img/3.0 logo 2025.png";
-import logo from "../assets/img/HO 4.0 assets/HO 4.0 Logo.png";
+import logo from "../assets/img/HO 4.0/HO 4.0 assets/HO 4.0 Logo.png";
 import blueStarLogo from "../assets/img/Blue Star Sponsor .png";
 
 // Add these custom styles at the top of the file

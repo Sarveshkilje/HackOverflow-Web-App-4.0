@@ -1,6 +1,87 @@
+/* Schedule Section Styling */
+.schedule {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.schedule .container-fluid {
+  padding: 0 60px;
+}
+
+/* Schedule Image Container */
+.schedule .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.schedule .col img {
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+
+
 #purple-pink {
   background: linear-gradient(98.84deg, #a8519f 43.27%, #a49ac0 71.84%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Brand Gradient specifically for Schedule Heading */
+.schedule-heading-gradient {
+  background: linear-gradient(90deg, #FCB216 0%, #E85D24 35%, #D91B57 70%, #63205F 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  display: block;
+}
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 991px) {
+  .schedule .container-fluid {
+    padding: 0 30px;
+  }
+  
+  .schedule .col img {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .schedule {
+    padding: 60px 0;
+  }
+  
+  .schedule .container-fluid {
+    padding: 0 20px;
+  }
+  
+  .schedule .col {
+    padding: 30px 10px;
+  }
+  
+  .schedule .col img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .schedule {
+    padding: 40px 0;
+  }
+  
+  .schedule .col {
+    padding: 20px 5px;
+  }
 }

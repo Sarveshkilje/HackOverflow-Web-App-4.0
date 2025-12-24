@@ -134,12 +134,12 @@ function App() {
             element={
               <Fragment>
                 {/* Global Ambient Glow Orbs */}
-                <div className="glow-orb orb-1"></div>
+                {/* <div className="glow-orb orb-1"></div>
                 <div className="glow-orb orb-2"></div>
                 <div className="glow-orb orb-3"></div>
                 <div className="glow-orb orb-4"></div>
                 <div className="glow-orb orb-5"></div>
-                <div className="glow-orb orb-6"></div>
+                <div className="glow-orb orb-6"></div> */}
                 
                 <ScrollToTop
                   className="scroll-to-top"
