@@ -5,13 +5,11 @@ import "aos/dist/aos.css";
 import "./DateReveal.css";
 
 const DateMeter = ({ direction = "up", duration = "10s" }) => {
-  // Generate numbers 1-31
   const days = Array.from({ length: 31 }, (_, i) => i + 1);
-  // Duplicate the array for seamless scrolling
   const scrollItems = [...days, ...days];
 
   return (
-    <div className="date-card-container" data-aos="fade-up">
+    <div className="date-card-container">
       <div className="date-card">
         <div className="meter-container">
           <div className="meter-overlay"></div>
@@ -48,10 +46,9 @@ const DateReveal = () => {
           </h1>
         </div>
         
-        <div className="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-2 lg:grid lg:grid-cols-2 xl:grid xl:grid-cols-3 xl:gap-64 justify-items-center">
-          {/* Create 3 Date Meters with alternating directions and different speeds */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
           <DateMeter direction="up" duration="12s" />
-          <DateMeter direction="down" duration="15s" />
+          <DateMeter direction="down" duration="18s" />
           <DateMeter direction="up" duration="10s" />
         </div>
       </Container>
