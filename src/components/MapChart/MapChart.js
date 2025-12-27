@@ -30,14 +30,14 @@ const PROJECTION_CONFIG = {
 //   "#6E57B2", // Even darker dark version
 // ];
 
-const COLOR_RANGE = [
-  "#DFEEE0", // Lightest - low participation
-  "#C5E0C9",
-  "#A8D1B2",
-  "#8BC29B",
-  "#6EB384",
-  "#5B8F81", // Darkest - high participation
-];
+// const COLOR_RANGE = [
+//   "#DFEEE0", // Lightest - low participation
+//   "#C5E0C9",
+//   "#A8D1B2",
+//   "#8BC29B",
+//   "#6EB384",
+//   "#5B8F81", // Darkest - high participation
+// ];
 
 // const COLOR_RANGE = [
 //   "#9C6AA6",
@@ -49,6 +49,47 @@ const COLOR_RANGE = [
 //   "#372854",
 //   "#261D46",
 // ];
+const COLOR_RANGE = [
+    "#fffaeb",
+    "#fef1c7",
+    "#fee189",
+    "#fdcc4c",
+    "#fcb216",
+    "#f6940a",
+    "#da6e05",
+    "#b54c08",
+    "#933a0d"
+];
+
+// const COLOR_RANGE = [
+//     "#fdf5fe",
+//     "#fbeafd",
+//     "#f6d5f9",
+//     "#f1b3f4",
+//     "#eb86ec",
+//     "#dc57de",
+//     "#c237c1",
+//     "#a12a9e",
+//     "#83257f",
+//     "#63205f",
+//     "#470b43",
+// ];
+
+// const COLOR_RANGE = [
+//     "#fff1f3",
+//     "#ffe4e9",
+//     "#fecdd8",
+//     "#fda4b8",
+//     "#fc7092",
+//     "#f53e6f",
+//     "#d91b57",
+//     "#bf114d",
+//     "#a01147",
+//     "#891242",
+//     "#4c0520",
+// ];
+
+
 
 const DEFAULT_COLOR = "#DFEEE0"; // Default color for states with no participation
 

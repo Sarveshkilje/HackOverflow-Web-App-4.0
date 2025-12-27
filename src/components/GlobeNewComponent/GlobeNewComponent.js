@@ -21,7 +21,7 @@ export const GlobeNewComponent = () => {
             <h1 id="state-8">Assam</h1>
           </div>
         </div>
-        <div className="lg:w-1/2 xl:w-[80%] mr-[65rem] sm:mr-[97rem] lg:mr-[128rem] xl:mr-[45rem] 2xl:mr-[46rem]">
+        <div className="lg:w-1/2 xl:w-[80%] mr-[65rem] sm:mr-[97rem] lg:mr-[128rem] xl:mr-[65rem] 2xl:mr-[65rem]">
           <MapChart />
         </div>
       </div>
