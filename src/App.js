@@ -23,6 +23,7 @@ import InstagramReelsCards from './components/InstagramReelsCards';
 import Footer from './components/Footer';
 import MobileNavbar from './components/MobileNavbar/MobileNavbar';
 import GalleryLayout from './components/GalleryLayout';
+import TeamSection from "./components/TeamSection.js";
 
 // Optimized component wrapper with improved loading strategy
 const OptimizedComponent = ({ children, id, priority = false }) => {
@@ -194,7 +195,8 @@ function App() {
                 </OptimizedComponent>
 
                 <OptimizedComponent id="appteam">
-                  <AppTeam />
+                  {/* <AppTeam /> */}
+                  <TeamSection></TeamSection>
                 </OptimizedComponent>
 
                 <OptimizedComponent id="sponsors">
