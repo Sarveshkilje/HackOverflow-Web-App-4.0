@@ -24,6 +24,7 @@ import Footer from './components/Footer';
 import MobileNavbar from './components/MobileNavbar/MobileNavbar';
 import GalleryLayout from './components/GalleryLayout';
 import TeamSection from "./components/TeamSection.js";
+import Timeline from "./components/Timeline.js"
 
 // Optimized component wrapper with improved loading strategy
 const OptimizedComponent = ({ children, id, priority = false }) => {
@@ -197,6 +198,10 @@ function App() {
                 <OptimizedComponent id="appteam">
                   {/* <AppTeam /> */}
                   <TeamSection></TeamSection>
+                </OptimizedComponent>
+
+                                <OptimizedComponent id="timeline">
+<Timeline></Timeline>
                 </OptimizedComponent>
 
                 <OptimizedComponent id="sponsors">

@@ -2,16 +2,31 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import TabSection from "./TabSection";
 import ManavImg from "../assets/img/teams/manav gupta.png";
+import YashMahajanImg from "../assets/img/teams/yash mahajan.png";
+import SahilGaikwadImg from "../assets/img/teams/sahil gaikwad.png";
+import SwastikImg from "../assets/img/teams/swastik_patil.png";
 
 const tabData = {
   tab1: {
     label: "Mentors",
     team: [
       {
-        name: "Manav",
+        name: "Yash Mahajan",
         role: "Founder",
         desc: "I've established pagedone in 2022 and it was one of the best idea I've had.",
-        img: ManavImg,
+        img: YashMahajanImg,
+      },
+            {
+        name: "Sahil Gaikwad",
+        role: "Founder",
+        desc: "I've established pagedone in 2022 and it was one of the best idea I've had.",
+        img: SahilGaikwadImg,
+      },
+            {
+        name: "Swastik",
+        role: "Founder",
+        desc: "I've established pagedone in 2022 and it was one of the best idea I've had.",
+        img: SwastikImg,
       },
     ],
   },
@@ -19,10 +34,10 @@ const tabData = {
     label: "Judges",
     team: [
       {
-        name: "Rams Lesli",
-        role: "Judge",
-        desc: "Evaluates innovation and technical depth.",
-        img: "https://images.unsplash.com/photo-1527980965255-d3b416303d12",
+        name: "Manav",
+        role: "Founder",
+        desc: "I've established pagedone in 2022 and it was one of the best idea I've had.",
+        img: ManavImg,
       },
     ],
   },
